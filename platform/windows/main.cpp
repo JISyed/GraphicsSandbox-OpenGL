@@ -4,5 +4,5 @@
 int main(int argc, const char * argv[])
 {
 	// Run the Graphics Sandbox's Main()
-	return sb_main(argc, argv);
+	return gs_main(argc, argv);
 }
