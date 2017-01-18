@@ -61,16 +61,22 @@
     <Filter Include="Platform\Windows">
       <UniqueIdentifier>{c55bd6a3-c53d-4eb8-b550-a36da31ac7db}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Code\AppSystem">
+      <UniqueIdentifier>{15fb6003-af47-4af4-9ff8-14234fc09430}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\code\main.cpp">
-      <Filter>Code</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\thirdparty\gl3w\gl3w.c">
       <Filter>ThirdParty\gl3w</Filter>
     </ClCompile>
     <ClCompile Include="..\..\thirdparty\glm\detail\glm.cpp">
       <Filter>ThirdParty\glm\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\AppSystem\GraphicsSandboxMain.cpp">
+      <Filter>Code\AppSystem</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -832,6 +838,9 @@
     </ClInclude>
     <ClInclude Include="..\..\thirdparty\oail\oail\Compiler\pushpack1.h">
       <Filter>ThirdParty\oail\oail\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\AppSystem\GraphicsSandboxMain.h">
+      <Filter>Code\AppSystem</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

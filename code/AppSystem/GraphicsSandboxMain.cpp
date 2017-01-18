@@ -1,3 +1,6 @@
+#include "GraphicsSandboxMain.h"
+//-----------------------------
+
 #include <iostream>
 
 
@@ -39,8 +42,14 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 // Window dimensions
 const GLuint WIDTH = 800, HEIGHT = 600;
 
-int main()
+
+
+
+
+int sb_main(int argc, const char * argv[])
 {
+	argc; argv;
+
 	glm::mat4x4 modelMat(4);
 
 	Assimp::Importer importer;

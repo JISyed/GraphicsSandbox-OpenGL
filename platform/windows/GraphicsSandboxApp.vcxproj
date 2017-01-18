@@ -84,11 +84,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\code\main.cpp" />
+    <ClCompile Include="..\..\code\AppSystem\GraphicsSandboxMain.cpp" />
     <ClCompile Include="..\..\thirdparty\gl3w\gl3w.c" />
     <ClCompile Include="..\..\thirdparty\glm\detail\glm.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\code\AppSystem\GraphicsSandboxMain.h" />
     <ClInclude Include="..\..\thirdparty\freetype\freetype\config\ftconfig.h" />
     <ClInclude Include="..\..\thirdparty\freetype\freetype\config\ftheader.h" />
     <ClInclude Include="..\..\thirdparty\freetype\freetype\config\ftmodule.h" />
