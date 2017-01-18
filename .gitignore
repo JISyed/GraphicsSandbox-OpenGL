@@ -1,12 +1,4 @@
 ######################
-# DON'T INGORE !
-######################
-
-!/thirdparty/freetype/*
-
-
-
-######################
 # INGORE
 ######################
 
@@ -351,3 +343,14 @@ __pycache__/
 ### VisualStudio Patch ###
 
 # End of https://www.gitignore.io/api/c++,xcode,visualstudio
+
+
+
+
+######################
+# DON'T INGORE !
+######################
+
+!thirdparty/freetype/*
+
+
