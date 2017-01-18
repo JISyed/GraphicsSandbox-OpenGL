@@ -3,8 +3,12 @@
 
 #include <iostream>
 
-#define GS_UNUSED_VAR(x)
-
+#ifdef _WIN32
+	#define GS_UNUSED_VAR(x) x
+#else
+	// macOS
+	#define GS_UNUSED_VAR(x)
+#endif
 
 #include <GL/gl3w.h>
 

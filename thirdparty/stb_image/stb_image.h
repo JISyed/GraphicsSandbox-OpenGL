@@ -405,7 +405,12 @@ extern "C" {
 #define STBIDEF extern
 #endif
 
-#define STBI_JIS_UNUSED_VAR(x)
+#ifdef _WIN32
+	#define STBI_JIS_UNUSED_VAR(x) x
+#else
+	// macOS
+	#define STBI_JIS_UNUSED_VAR(x)
+#endif
     
 //////////////////////////////////////////////////////////////////////////////
 //
