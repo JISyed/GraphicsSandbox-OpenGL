@@ -11,6 +11,8 @@
 		517187241E2F118500D59D73 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 517187211E2F118500D59D73 /* main.mm */; };
 		517187261E2F130500D59D73 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5171871C1E2F117A00D59D73 /* MainMenu.xib */; };
 		517187271E2F130500D59D73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5171871A1E2F116A00D59D73 /* Assets.xcassets */; };
+		517187341E2F213900D59D73 /* GraphicsSandboxMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 517187321E2F213900D59D73 /* GraphicsSandboxMain.cpp */; };
+		517187391E2F25A500D59D73 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517187381E2F25A500D59D73 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,9 @@
 		517187201E2F118500D59D73 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		517187211E2F118500D59D73 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = SOURCE_ROOT; };
 		517187221E2F118500D59D73 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		517187321E2F213900D59D73 /* GraphicsSandboxMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GraphicsSandboxMain.cpp; path = ../../code/AppSystem/GraphicsSandboxMain.cpp; sourceTree = SOURCE_ROOT; };
+		517187331E2F213900D59D73 /* GraphicsSandboxMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphicsSandboxMain.h; path = ../../code/AppSystem/GraphicsSandboxMain.h; sourceTree = SOURCE_ROOT; };
+		517187381E2F25A500D59D73 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517187391E2F25A500D59D73 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +45,7 @@
 			children = (
 				517187081E2F0B7700D59D73 /* GraphicsSandboxApp */,
 				517187071E2F0B7700D59D73 /* Products */,
+				517187351E2F250200D59D73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +91,7 @@
 		5171872A1E2F139300D59D73 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				5171872E1E2F211100D59D73 /* AppSystem */,
 			);
 			name = Code;
 			sourceTree = "<group>";
@@ -91,8 +99,41 @@
 		5171872B1E2F139900D59D73 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				517187441E2FB2AE00D59D73 /* glm */,
+				5171873A1E2FAFE400D59D73 /* gl3w */,
 			);
 			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		5171872E1E2F211100D59D73 /* AppSystem */ = {
+			isa = PBXGroup;
+			children = (
+				517187321E2F213900D59D73 /* GraphicsSandboxMain.cpp */,
+				517187331E2F213900D59D73 /* GraphicsSandboxMain.h */,
+			);
+			name = AppSystem;
+			sourceTree = "<group>";
+		};
+		517187351E2F250200D59D73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				517187381E2F25A500D59D73 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5171873A1E2FAFE400D59D73 /* gl3w */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = gl3w;
+			sourceTree = "<group>";
+		};
+		517187441E2FB2AE00D59D73 /* glm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = glm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517187341E2F213900D59D73 /* GraphicsSandboxMain.cpp in Sources */,
 				517187241E2F118500D59D73 /* main.mm in Sources */,
 				517187231E2F118500D59D73 /* AppDelegate.m in Sources */,
 			);
@@ -225,10 +267,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GS_CodeDir = "$(PROJECT_DIR)/../../code";
+				GS_ThirdPartyDir = "$(PROJECT_DIR)/../../thirdparty";
+				HEADER_SEARCH_PATHS = (
+					"$(GS_ThirdPartyDir)/freetype",
+					"$(GS_ThirdPartyDir)/gl3w",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(GS_CodeDir) $(GS_ThirdPartyDir)";
 			};
 			name = Debug;
 		};
@@ -266,9 +315,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GS_CodeDir = "$(PROJECT_DIR)/../../code";
+				GS_ThirdPartyDir = "$(PROJECT_DIR)/../../thirdparty";
+				HEADER_SEARCH_PATHS = (
+					"$(GS_ThirdPartyDir)/freetype",
+					"$(GS_ThirdPartyDir)/gl3w",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(GS_CodeDir) $(GS_ThirdPartyDir)";
 			};
 			name = Release;
 		};
@@ -282,6 +338,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.jisyed.GraphicsSandboxApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(GS_CodeDir) $(GS_ThirdPartyDir)";
 			};
 			name = Debug;
 		};
@@ -295,6 +352,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.jisyed.GraphicsSandboxApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(GS_CodeDir) $(GS_ThirdPartyDir)";
 			};
 			name = Release;
 		};
