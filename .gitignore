@@ -1,3 +1,15 @@
+######################
+# DON'T INGORE !
+######################
+
+!/thirdparty/freetype/*
+
+
+
+######################
+# INGORE
+######################
+
 # Created by https://www.gitignore.io/api/c++,xcode,visualstudio
 
 ### C++ ###
