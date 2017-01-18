@@ -33,7 +33,7 @@
 
 #include "irrklang/irrKlang.h"
 using namespace irrklang;
-ISoundEngine *SoundEngine = createIrrKlangDevice();
+
 
 
 
@@ -52,7 +52,7 @@ const GLuint WIDTH = 800, HEIGHT = 600;
 
 
 
-int sb_main(int argc, const char * argv[])
+int gs_main(int argc, const char * argv[])
 {
 	GS_UNUSED_VAR(argc); 
     GS_UNUSED_VAR(argv);
@@ -60,6 +60,7 @@ int sb_main(int argc, const char * argv[])
 	glm::mat4x4 modelMat(4);
 
 	Assimp::Importer importer;
+    ISoundEngine *SoundEngine = createIrrKlangDevice();
 
 	SoundEngine->play2D("audio/breakout.mp3", GL_TRUE);
 
@@ -70,6 +71,7 @@ int sb_main(int argc, const char * argv[])
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // Absolutly needed in OS X, otherwise GL version becomes 2.1
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
 	// Create a GLFWwindow object that we can use for GLFW's functions
