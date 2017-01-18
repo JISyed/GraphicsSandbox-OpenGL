@@ -3,16 +3,18 @@
 
 #include <iostream>
 
+#define GS_UNUSED_VAR(x)
 
-#include <GL\gl3w.h>
+
+#include <GL/gl3w.h>
 
 
-#include "glfw\glfw3.h"
+#include "glfw/glfw3.h"
 
 
 
 #define STB_IMAGE_IMPLEMENTATION
-#include "stb_image\stb_image.h"
+#include "stb_image/stb_image.h"
 
 
 
@@ -21,20 +23,20 @@
 
 
 
-#include "glm\glm.hpp"
+#include "glm/glm.hpp"
 
 
 
-#include "irrklang\irrKlang.h"
+#include "irrklang/irrKlang.h"
 using namespace irrklang;
 ISoundEngine *SoundEngine = createIrrKlangDevice();
 
 
 
 
-#include "oail\oail\Importer.hpp"
-#include "oail\oail\scene.h"
-#include "oail\oail\postprocess.h"
+#include "oail/oail/Importer.hpp"
+#include "oail/oail/scene.h"
+#include "oail/oail/postprocess.h"
 
 // Function prototypes
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
@@ -48,7 +50,8 @@ const GLuint WIDTH = 800, HEIGHT = 600;
 
 int sb_main(int argc, const char * argv[])
 {
-	argc; argv;
+	GS_UNUSED_VAR(argc); 
+    GS_UNUSED_VAR(argv);
 
 	glm::mat4x4 modelMat(4);
 
@@ -125,8 +128,8 @@ int sb_main(int argc, const char * argv[])
 // Is called whenever a key is pressed/released via GLFW
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
 {
-	mode;
-	scancode;
+	GS_UNUSED_VAR(mode);
+	GS_UNUSED_VAR(scancode);
 	std::cout << key << std::endl;
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
 		glfwSetWindowShouldClose(window, GL_TRUE);
