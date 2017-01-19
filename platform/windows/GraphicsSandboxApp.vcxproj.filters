@@ -404,9 +404,6 @@
     <ClInclude Include="..\..\thirdparty\glm\gtc\bitfield.hpp">
       <Filter>ThirdParty\glm\gtc</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\thirdparty\glm\gtc\color_space.hpp">
-      <Filter>ThirdParty\glm\gtc</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\thirdparty\glm\gtc\constants.hpp">
       <Filter>ThirdParty\glm\gtc</Filter>
     </ClInclude>
@@ -414,9 +411,6 @@
       <Filter>ThirdParty\glm\gtc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\thirdparty\glm\gtc\functions.hpp">
-      <Filter>ThirdParty\glm\gtc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\thirdparty\glm\gtc\integer.hpp">
       <Filter>ThirdParty\glm\gtc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\thirdparty\glm\gtc\matrix_access.hpp">
@@ -435,9 +429,6 @@
       <Filter>ThirdParty\glm\gtc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\thirdparty\glm\gtc\packing.hpp">
-      <Filter>ThirdParty\glm\gtc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\thirdparty\glm\gtc\quaternion.hpp">
       <Filter>ThirdParty\glm\gtc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\thirdparty\glm\gtc\random.hpp">
@@ -471,9 +462,6 @@
       <Filter>ThirdParty\glm\gtx</Filter>
     </ClInclude>
     <ClInclude Include="..\..\thirdparty\glm\gtx\closest_point.hpp">
-      <Filter>ThirdParty\glm\gtx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\thirdparty\glm\gtx\color_space.hpp">
       <Filter>ThirdParty\glm\gtx</Filter>
     </ClInclude>
     <ClInclude Include="..\..\thirdparty\glm\gtx\color_space_YCoCg.hpp">
@@ -516,9 +504,6 @@
       <Filter>ThirdParty\glm\gtx</Filter>
     </ClInclude>
     <ClInclude Include="..\..\thirdparty\glm\gtx\hash.hpp">
-      <Filter>ThirdParty\glm\gtx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\thirdparty\glm\gtx\integer.hpp">
       <Filter>ThirdParty\glm\gtx</Filter>
     </ClInclude>
     <ClInclude Include="..\..\thirdparty\glm\gtx\intersect.hpp">
@@ -579,9 +564,6 @@
       <Filter>ThirdParty\glm\gtx</Filter>
     </ClInclude>
     <ClInclude Include="..\..\thirdparty\glm\gtx\projection.hpp">
-      <Filter>ThirdParty\glm\gtx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\thirdparty\glm\gtx\quaternion.hpp">
       <Filter>ThirdParty\glm\gtx</Filter>
     </ClInclude>
     <ClInclude Include="..\..\thirdparty\glm\gtx\range.hpp">
@@ -842,6 +824,24 @@
     <ClInclude Include="..\..\code\AppSystem\GraphicsSandboxMain.h">
       <Filter>Code\AppSystem</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\thirdparty\glm\gtc\color_space_gtc.hpp">
+      <Filter>ThirdParty\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\thirdparty\glm\gtc\integer_gtc.hpp">
+      <Filter>ThirdParty\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\thirdparty\glm\gtc\quaternion_gtc.hpp">
+      <Filter>ThirdParty\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\thirdparty\glm\gtx\color_space_gtx.hpp">
+      <Filter>ThirdParty\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\thirdparty\glm\gtx\integer_gtx.hpp">
+      <Filter>ThirdParty\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\thirdparty\glm\gtx\quaternion_gtx.hpp">
+      <Filter>ThirdParty\glm\gtx</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\thirdparty\glm\detail\func_common.inl">
@@ -955,9 +955,6 @@
     <None Include="..\..\thirdparty\glm\gtc\color_encoding.inl">
       <Filter>ThirdParty\glm\gtc</Filter>
     </None>
-    <None Include="..\..\thirdparty\glm\gtc\color_space.inl">
-      <Filter>ThirdParty\glm\gtc</Filter>
-    </None>
     <None Include="..\..\thirdparty\glm\gtc\constants.inl">
       <Filter>ThirdParty\glm\gtc</Filter>
     </None>
@@ -965,9 +962,6 @@
       <Filter>ThirdParty\glm\gtc</Filter>
     </None>
     <None Include="..\..\thirdparty\glm\gtc\functions.inl">
-      <Filter>ThirdParty\glm\gtc</Filter>
-    </None>
-    <None Include="..\..\thirdparty\glm\gtc\integer.inl">
       <Filter>ThirdParty\glm\gtc</Filter>
     </None>
     <None Include="..\..\thirdparty\glm\gtc\matrix_access.inl">
@@ -983,9 +977,6 @@
       <Filter>ThirdParty\glm\gtc</Filter>
     </None>
     <None Include="..\..\thirdparty\glm\gtc\packing.inl">
-      <Filter>ThirdParty\glm\gtc</Filter>
-    </None>
-    <None Include="..\..\thirdparty\glm\gtc\quaternion.inl">
       <Filter>ThirdParty\glm\gtc</Filter>
     </None>
     <None Include="..\..\thirdparty\glm\gtc\quaternion_simd.inl">
@@ -1019,9 +1010,6 @@
       <Filter>ThirdParty\glm\gtx</Filter>
     </None>
     <None Include="..\..\thirdparty\glm\gtx\closest_point.inl">
-      <Filter>ThirdParty\glm\gtx</Filter>
-    </None>
-    <None Include="..\..\thirdparty\glm\gtx\color_space.inl">
       <Filter>ThirdParty\glm\gtx</Filter>
     </None>
     <None Include="..\..\thirdparty\glm\gtx\color_space_YCoCg.inl">
@@ -1067,9 +1055,6 @@
       <Filter>ThirdParty\glm\gtx</Filter>
     </None>
     <None Include="..\..\thirdparty\glm\gtx\hash.inl">
-      <Filter>ThirdParty\glm\gtx</Filter>
-    </None>
-    <None Include="..\..\thirdparty\glm\gtx\integer.inl">
       <Filter>ThirdParty\glm\gtx</Filter>
     </None>
     <None Include="..\..\thirdparty\glm\gtx\intersect.inl">
@@ -1130,9 +1115,6 @@
       <Filter>ThirdParty\glm\gtx</Filter>
     </None>
     <None Include="..\..\thirdparty\glm\gtx\projection.inl">
-      <Filter>ThirdParty\glm\gtx</Filter>
-    </None>
-    <None Include="..\..\thirdparty\glm\gtx\quaternion.inl">
       <Filter>ThirdParty\glm\gtx</Filter>
     </None>
     <None Include="..\..\thirdparty\glm\gtx\raw_data.inl">
@@ -1206,6 +1188,24 @@
     </None>
     <None Include="..\..\thirdparty\oail\oail\vector3.inl">
       <Filter>ThirdParty\oail\oail</Filter>
+    </None>
+    <None Include="..\..\thirdparty\glm\gtc\color_space_gtc.inl">
+      <Filter>ThirdParty\glm\gtc</Filter>
+    </None>
+    <None Include="..\..\thirdparty\glm\gtc\integer_gtc.inl">
+      <Filter>ThirdParty\glm\gtc</Filter>
+    </None>
+    <None Include="..\..\thirdparty\glm\gtc\quaternion_gtc.inl">
+      <Filter>ThirdParty\glm\gtc</Filter>
+    </None>
+    <None Include="..\..\thirdparty\glm\gtx\color_space_gtx.inl">
+      <Filter>ThirdParty\glm\gtx</Filter>
+    </None>
+    <None Include="..\..\thirdparty\glm\gtx\integer_gtx.inl">
+      <Filter>ThirdParty\glm\gtx</Filter>
+    </None>
+    <None Include="..\..\thirdparty\glm\gtx\quaternion_gtx.inl">
+      <Filter>ThirdParty\glm\gtx</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
