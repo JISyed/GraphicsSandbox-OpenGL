@@ -78,7 +78,7 @@ int gs_main(int argc, const char * argv[])
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
 	// Create a GLFWwindow object that we can use for GLFW's functions
-	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "LearnOpenGL", nullptr, nullptr);
+	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "GraphicsSandbox", nullptr, nullptr);
 	if (window == nullptr)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
@@ -86,6 +86,8 @@ int gs_main(int argc, const char * argv[])
 		return -1;
 	}
 	glfwMakeContextCurrent(window);
+    
+    
 	// Set the required callback functions
 	glfwSetKeyCallback(window, key_callback);
 
@@ -147,5 +149,7 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 	GS_UNUSED_VAR(scancode);
 	std::cout << key << std::endl;
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
+    {
 		glfwSetWindowShouldClose(window, GL_TRUE);
+    }
 }

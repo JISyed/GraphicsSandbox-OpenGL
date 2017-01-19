@@ -129,7 +129,7 @@
 		51718AFF1E2FFE9F00D59D73 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51718AFD1E2FFE9F00D59D73 /* libfreetype.a */; };
 		51718B001E2FFE9F00D59D73 /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 51718AFE1E2FFE9F00D59D73 /* libfreetype.6.dylib */; };
 		51718B031E2FFF7000D59D73 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51718B021E2FFF7000D59D73 /* Cocoa.framework */; };
-		51718B1E1E30042300D59D73 /* ikpMP3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 51718B1C1E30042300D59D73 /* ikpMP3.dylib */; };
+		51718B1E1E30042300D59D73 /* libikpMP3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 51718B1C1E30042300D59D73 /* libikpMP3.dylib */; };
 		51718B1F1E30042300D59D73 /* libirrklang.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 51718B1D1E30042300D59D73 /* libirrklang.dylib */; };
 		51718B241E3008C900D59D73 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51718B211E3008C900D59D73 /* libglfw3.a */; };
 		51718B531E30098E00D59D73 /* color4.inl in Resources */ = {isa = PBXBuildFile; fileRef = 51718B431E30098E00D59D73 /* color4.inl */; };
@@ -141,7 +141,31 @@
 		51718B591E30098E00D59D73 /* vector3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 51718B521E30098E00D59D73 /* vector3.inl */; };
 		51718B5B1E300C2E00D59D73 /* libassimp.3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 51718B5A1E300C2E00D59D73 /* libassimp.3.3.1.dylib */; };
 		51718B5F1E30648A00D59D73 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51718B5E1E30648A00D59D73 /* CoreVideo.framework */; };
+		51718B611E310E0A00D59D73 /* libassimp.3.3.1.dylib in Copy Dynamic Libraries To Bundle */ = {isa = PBXBuildFile; fileRef = 51718B5A1E300C2E00D59D73 /* libassimp.3.3.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		51718B621E310E0D00D59D73 /* libikpMP3.dylib in Copy Dynamic Libraries To Bundle */ = {isa = PBXBuildFile; fileRef = 51718B1C1E30042300D59D73 /* libikpMP3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		51718B631E310E1100D59D73 /* libirrklang.dylib in Copy Dynamic Libraries To Bundle */ = {isa = PBXBuildFile; fileRef = 51718B1D1E30042300D59D73 /* libirrklang.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		51718B641E310E1A00D59D73 /* libfreetype.6.dylib in Copy Dynamic Libraries To Bundle */ = {isa = PBXBuildFile; fileRef = 51718AFE1E2FFE9F00D59D73 /* libfreetype.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		51718B671E3141E800D59D73 /* libpng16.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 51718B661E3141E800D59D73 /* libpng16.16.dylib */; };
+		51718B681E3141F700D59D73 /* libpng16.16.dylib in Copy Dynamic Libraries To Bundle */ = {isa = PBXBuildFile; fileRef = 51718B661E3141E800D59D73 /* libpng16.16.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51718B601E310CA000D59D73 /* Copy Dynamic Libraries To Bundle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				51718B611E310E0A00D59D73 /* libassimp.3.3.1.dylib in Copy Dynamic Libraries To Bundle */,
+				51718B621E310E0D00D59D73 /* libikpMP3.dylib in Copy Dynamic Libraries To Bundle */,
+				51718B631E310E1100D59D73 /* libirrklang.dylib in Copy Dynamic Libraries To Bundle */,
+				51718B641E310E1A00D59D73 /* libfreetype.6.dylib in Copy Dynamic Libraries To Bundle */,
+				51718B681E3141F700D59D73 /* libpng16.16.dylib in Copy Dynamic Libraries To Bundle */,
+			);
+			name = "Copy Dynamic Libraries To Bundle";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		517189231E2FDF0D00D59D73 /* GraphicsSandboxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphicsSandboxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -461,7 +485,7 @@
 		51718AFB1E2FFE7800D59D73 /* ttunpat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ttunpat.h; path = ../../../thirdparty/freetype/freetype/ttunpat.h; sourceTree = "<group>"; };
 		51718AFC1E2FFE8600D59D73 /* ft2build.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ft2build.h; path = ../../../thirdparty/freetype/ft2build.h; sourceTree = "<group>"; };
 		51718AFD1E2FFE9F00D59D73 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = ../../../thirdparty/freetype/libfreetype.a; sourceTree = "<group>"; };
-		51718AFE1E2FFE9F00D59D73 /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreetype.6.dylib; path = ../../../thirdparty/freetype/libfreetype.6.dylib; sourceTree = "<group>"; };
+		51718AFE1E2FFE9F00D59D73 /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreetype.6.dylib; path = ../../thirdparty/freetype/libfreetype.6.dylib; sourceTree = "<group>"; };
 		51718B021E2FFF7000D59D73 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		51718B051E3001B500D59D73 /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stb_image.h; path = ../../../thirdparty/stb_image/stb_image.h; sourceTree = "<group>"; };
 		51718B071E30042300D59D73 /* ik_ESoundEngineOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ik_ESoundEngineOptions.h; path = ../../../thirdparty/irrklang/ik_ESoundEngineOptions.h; sourceTree = "<group>"; };
@@ -485,8 +509,8 @@
 		51718B191E30042300D59D73 /* ik_SAudioStreamFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ik_SAudioStreamFormat.h; path = ../../../thirdparty/irrklang/ik_SAudioStreamFormat.h; sourceTree = "<group>"; };
 		51718B1A1E30042300D59D73 /* ik_vec3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ik_vec3d.h; path = ../../../thirdparty/irrklang/ik_vec3d.h; sourceTree = "<group>"; };
 		51718B1B1E30042300D59D73 /* irrKlang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = irrKlang.h; path = ../../../thirdparty/irrklang/irrKlang.h; sourceTree = "<group>"; };
-		51718B1C1E30042300D59D73 /* ikpMP3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = ikpMP3.dylib; path = ../../../thirdparty/irrklang/ikpMP3.dylib; sourceTree = "<group>"; };
-		51718B1D1E30042300D59D73 /* libirrklang.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libirrklang.dylib; path = ../../../thirdparty/irrklang/libirrklang.dylib; sourceTree = "<group>"; };
+		51718B1C1E30042300D59D73 /* libikpMP3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libikpMP3.dylib; path = ../../thirdparty/irrklang/libikpMP3.dylib; sourceTree = "<group>"; };
+		51718B1D1E30042300D59D73 /* libirrklang.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libirrklang.dylib; path = ../../thirdparty/irrklang/libirrklang.dylib; sourceTree = "<group>"; };
 		51718B211E3008C900D59D73 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../thirdparty/glfw/libglfw3.a; sourceTree = "<group>"; };
 		51718B221E3008C900D59D73 /* glfw3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glfw3.h; path = ../../../thirdparty/glfw/glfw3.h; sourceTree = "<group>"; };
 		51718B231E3008C900D59D73 /* glfw3native.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glfw3native.h; path = ../../../thirdparty/glfw/glfw3native.h; sourceTree = "<group>"; };
@@ -533,8 +557,9 @@
 		51718B501E30098E00D59D73 /* quaternion.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = quaternion.inl; path = ../../../thirdparty/oail/oail/quaternion.inl; sourceTree = "<group>"; };
 		51718B511E30098E00D59D73 /* vector2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vector2.inl; path = ../../../thirdparty/oail/oail/vector2.inl; sourceTree = "<group>"; };
 		51718B521E30098E00D59D73 /* vector3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vector3.inl; path = ../../../thirdparty/oail/oail/vector3.inl; sourceTree = "<group>"; };
-		51718B5A1E300C2E00D59D73 /* libassimp.3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.3.3.1.dylib; path = ../../../thirdparty/oail/libassimp.3.3.1.dylib; sourceTree = "<group>"; };
+		51718B5A1E300C2E00D59D73 /* libassimp.3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.3.3.1.dylib; path = ../../thirdparty/oail/libassimp.3.3.1.dylib; sourceTree = "<group>"; };
 		51718B5E1E30648A00D59D73 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		51718B661E3141E800D59D73 /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = ../../thirdparty/freetype/libpng16.16.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -547,7 +572,8 @@
 				51718B001E2FFE9F00D59D73 /* libfreetype.6.dylib in Frameworks */,
 				51718B5B1E300C2E00D59D73 /* libassimp.3.3.1.dylib in Frameworks */,
 				51718B1F1E30042300D59D73 /* libirrklang.dylib in Frameworks */,
-				51718B1E1E30042300D59D73 /* ikpMP3.dylib in Frameworks */,
+				51718B1E1E30042300D59D73 /* libikpMP3.dylib in Frameworks */,
+				51718B671E3141E800D59D73 /* libpng16.16.dylib in Frameworks */,
 				51718AFF1E2FFE9F00D59D73 /* libfreetype.a in Frameworks */,
 				51718B241E3008C900D59D73 /* libglfw3.a in Frameworks */,
 			);
@@ -955,7 +981,6 @@
 			isa = PBXGroup;
 			children = (
 				51718AFD1E2FFE9F00D59D73 /* libfreetype.a */,
-				51718AFE1E2FFE9F00D59D73 /* libfreetype.6.dylib */,
 				51718AFC1E2FFE8600D59D73 /* ft2build.h */,
 				51718ACE1E2FFE4100D59D73 /* freetype */,
 			);
@@ -1024,6 +1049,11 @@
 		51718B011E2FFF7000D59D73 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51718AFE1E2FFE9F00D59D73 /* libfreetype.6.dylib */,
+				51718B1D1E30042300D59D73 /* libirrklang.dylib */,
+				51718B1C1E30042300D59D73 /* libikpMP3.dylib */,
+				51718B5A1E300C2E00D59D73 /* libassimp.3.3.1.dylib */,
+				51718B661E3141E800D59D73 /* libpng16.16.dylib */,
 				51718B5E1E30648A00D59D73 /* CoreVideo.framework */,
 				51718B021E2FFF7000D59D73 /* Cocoa.framework */,
 			);
@@ -1062,8 +1092,6 @@
 				51718B191E30042300D59D73 /* ik_SAudioStreamFormat.h */,
 				51718B1A1E30042300D59D73 /* ik_vec3d.h */,
 				51718B1B1E30042300D59D73 /* irrKlang.h */,
-				51718B1C1E30042300D59D73 /* ikpMP3.dylib */,
-				51718B1D1E30042300D59D73 /* libirrklang.dylib */,
 			);
 			name = irrklang;
 			sourceTree = "<group>";
@@ -1081,7 +1109,6 @@
 		51718B251E30095B00D59D73 /* oail */ = {
 			isa = PBXGroup;
 			children = (
-				51718B5A1E300C2E00D59D73 /* libassimp.3.3.1.dylib */,
 				51718B261E30096500D59D73 /* oail */,
 			);
 			name = oail;
@@ -1152,10 +1179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 517189341E2FDF0D00D59D73 /* Build configuration list for PBXNativeTarget "GraphicsSandboxApp" */;
 			buildPhases = (
-				51718B5D1E3014C600D59D73 /* Create Dynamic Lib SymLinks */,
 				5171891F1E2FDF0D00D59D73 /* Sources */,
 				517189201E2FDF0D00D59D73 /* Frameworks */,
 				517189211E2FDF0D00D59D73 /* Resources */,
+				51718B601E310CA000D59D73 /* Copy Dynamic Libraries To Bundle */,
+				51718B651E31314B00D59D73 /* Correct Dylib References in Executable (Script) */,
 			);
 			buildRules = (
 			);
@@ -1333,19 +1361,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		51718B5D1E3014C600D59D73 /* Create Dynamic Lib SymLinks */ = {
+		51718B651E31314B00D59D73 /* Correct Dylib References in Executable (Script) */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(PRODUCT_NAME).app/Contents/MacOS/$(PRODUCT_NAME)",
 			);
-			name = "Create Dynamic Lib SymLinks";
+			name = "Correct Dylib References in Executable (Script)";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd $PROJECT_DIR\ncd ./../../thirdparty\necho \"Making symlinks for the following dylibs: irrKlang, FreeType, and OAIL\"\nln -fs \"$(pwd)/irrklang/libirrklang.dylib\" /usr/local/lib/libirrklang.dylib\nln -fs \"$(pwd)/irrklang/ikpMP3.dylib\" /usr/local/lib/libikpMP3.dylib\nln -fs \"$(pwd)/freetype/libfreetype.6.dylib\" /usr/local/lib/libfreetype.6.dylib\nln -fs \"$(pwd)/oail/libassimp.3.3.1.dylib\" /usr/local/lib/libassimp.3.3.1.dylib";
+			shellScript = "echo \"Input File: $BUILT_PRODUCTS_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\"\ninstall_name_tool -change /usr/local/lib/libirrklang.dylib @executable_path/../Frameworks/libirrklang.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\"\ninstall_name_tool -change /usr/local/lib/libikpMP3.dylib @executable_path/../Frameworks/libikpMP3.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\"\ninstall_name_tool -change /usr/local/opt/freetype/lib/libfreetype.6.dylib @executable_path/../Frameworks/libfreetype.6.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\"\ninstall_name_tool -change /usr/local/lib/libassimp.3.3.1.dylib @executable_path/../Frameworks/libassimp.3.3.1.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\"\ninstall_name_tool -change /usr/local/opt/libpng/lib/libpng16.16.dylib @executable_path/../Frameworks/libpng16.16.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\"";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1495,7 +1524,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 43HLE74Q59;
 				INFOPLIST_FILE = GraphicsSandboxApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks $(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.jisyed.GraphicsSandboxApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1508,7 +1537,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 43HLE74Q59;
 				INFOPLIST_FILE = GraphicsSandboxApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks $(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.jisyed.GraphicsSandboxApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
