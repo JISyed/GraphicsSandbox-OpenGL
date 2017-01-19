@@ -2,7 +2,7 @@
 /// @file glm/glm.cpp
 
 #include <glm/glm.hpp>
-#include <glm/gtc/quaternion.hpp>
+#include <glm/gtc/quaternion_gtc.hpp>
 #include <glm/gtx/dual_quaternion.hpp>
 
 namespace glm

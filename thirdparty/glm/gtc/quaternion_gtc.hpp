@@ -398,4 +398,4 @@ namespace glm
 	/// @}
 } //namespace glm
 
-#include "quaternion.inl"
+#include "quaternion_gtc.inl"

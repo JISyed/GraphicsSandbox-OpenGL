@@ -19,7 +19,7 @@
 // Dependency:
 #include "../glm.hpp"
 #include "../gtc/constants.hpp"
-#include "../gtc/quaternion.hpp"
+#include "../gtc/quaternion_gtc.hpp"
 
 #if GLM_MESSAGES == GLM_MESSAGES_ENABLED && !defined(GLM_EXT_INCLUDED)
 #	pragma message("GLM: GLM_GTX_dual_quaternion extension included")

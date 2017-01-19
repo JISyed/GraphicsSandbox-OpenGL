@@ -14,7 +14,7 @@
 
 // Dependency:
 #include "../glm.hpp"
-#include "../gtc/integer.hpp"
+#include "../gtc/integer_gtc.hpp"
 
 #if GLM_MESSAGES == GLM_MESSAGES_ENABLED && !defined(GLM_EXT_INCLUDED)
 #	pragma message("GLM: GLM_GTX_integer extension included")
@@ -69,4 +69,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "integer.inl"
+#include "integer_gtx.inl"

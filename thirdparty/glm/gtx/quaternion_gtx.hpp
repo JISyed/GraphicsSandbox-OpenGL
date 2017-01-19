@@ -16,7 +16,7 @@
 // Dependency:
 #include "../glm.hpp"
 #include "../gtc/constants.hpp"
-#include "../gtc/quaternion.hpp"
+#include "../gtc/quaternion_gtc.hpp"
 #include "../gtx/norm.hpp"
 
 #if GLM_MESSAGES == GLM_MESSAGES_ENABLED && !defined(GLM_EXT_INCLUDED)
@@ -182,4 +182,4 @@ namespace glm
 	/// @}
 }//namespace glm
 
-#include "quaternion.inl"
+#include "quaternion_gtx.inl"
