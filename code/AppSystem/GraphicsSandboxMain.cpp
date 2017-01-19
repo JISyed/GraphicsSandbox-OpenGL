@@ -42,6 +42,9 @@ using namespace irrklang;
 #include "oail/oail/scene.h"
 #include "oail/oail/postprocess.h"
 
+
+
+
 // Function prototypes
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
 
@@ -70,8 +73,8 @@ int gs_main(int argc, const char * argv[])
 	// Set all the required options for GLFW
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // Absolutly needed in OS X, otherwise GL version becomes 2.1
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
 	// Create a GLFWwindow object that we can use for GLFW's functions
@@ -94,9 +97,9 @@ int gs_main(int argc, const char * argv[])
 		fprintf(stderr, "failed to initialize OpenGL\n");
 		return -1;
 	}
-	if (!gl3wIsSupported(3, 2))
+	if (!gl3wIsSupported(3, 3))
 	{
-		fprintf(stderr, "OpenGL 3.2 not supported\n");
+		fprintf(stderr, "OpenGL 3.3 not supported\n");
 		return -1;
 	}
 	printf("OpenGL %s, GLSL %s\n", glGetString(GL_VERSION),
@@ -130,6 +133,12 @@ int gs_main(int argc, const char * argv[])
 	glfwTerminate();
 	return 0;
 }
+
+
+
+
+
+
 
 // Is called whenever a key is pressed/released via GLFW
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)

@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		517189281E2FDF0D00D59D73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 517189271E2FDF0D00D59D73 /* AppDelegate.m */; };
 		5171892B1E2FDF0D00D59D73 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5171892A1E2FDF0D00D59D73 /* main.mm */; };
 		5171892D1E2FDF0D00D59D73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5171892C1E2FDF0D00D59D73 /* Assets.xcassets */; };
-		517189301E2FDF0D00D59D73 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5171892E1E2FDF0D00D59D73 /* MainMenu.xib */; };
 		517189471E2FE05800D59D73 /* gl3w.c in Sources */ = {isa = PBXBuildFile; fileRef = 517189461E2FE05800D59D73 /* gl3w.c */; };
 		517189CE1E2FE6E200D59D73 /* associated_min_max.inl in Resources */ = {isa = PBXBuildFile; fileRef = 5171895A1E2FE6E100D59D73 /* associated_min_max.inl */; };
 		517189CF1E2FE6E200D59D73 /* bit.inl in Resources */ = {isa = PBXBuildFile; fileRef = 5171895C1E2FE6E100D59D73 /* bit.inl */; };
@@ -142,15 +140,13 @@
 		51718B581E30098E00D59D73 /* vector2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 51718B511E30098E00D59D73 /* vector2.inl */; };
 		51718B591E30098E00D59D73 /* vector3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 51718B521E30098E00D59D73 /* vector3.inl */; };
 		51718B5B1E300C2E00D59D73 /* libassimp.3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 51718B5A1E300C2E00D59D73 /* libassimp.3.3.1.dylib */; };
+		51718B5F1E30648A00D59D73 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51718B5E1E30648A00D59D73 /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		517189231E2FDF0D00D59D73 /* GraphicsSandboxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphicsSandboxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		517189261E2FDF0D00D59D73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		517189271E2FDF0D00D59D73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5171892A1E2FDF0D00D59D73 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		5171892C1E2FDF0D00D59D73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5171892F1E2FDF0D00D59D73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		517189311E2FDF0D00D59D73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		517189461E2FE05800D59D73 /* gl3w.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = gl3w.c; path = ../../../thirdparty/gl3w/gl3w.c; sourceTree = "<group>"; };
 		517189491E2FE0EA00D59D73 /* gl3w.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gl3w.h; path = ../../../thirdparty/gl3w/GL/gl3w.h; sourceTree = "<group>"; };
@@ -538,6 +534,7 @@
 		51718B511E30098E00D59D73 /* vector2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vector2.inl; path = ../../../thirdparty/oail/oail/vector2.inl; sourceTree = "<group>"; };
 		51718B521E30098E00D59D73 /* vector3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vector3.inl; path = ../../../thirdparty/oail/oail/vector3.inl; sourceTree = "<group>"; };
 		51718B5A1E300C2E00D59D73 /* libassimp.3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.3.3.1.dylib; path = ../../../thirdparty/oail/libassimp.3.3.1.dylib; sourceTree = "<group>"; };
+		51718B5E1E30648A00D59D73 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -545,6 +542,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51718B5F1E30648A00D59D73 /* CoreVideo.framework in Frameworks */,
 				51718B031E2FFF7000D59D73 /* Cocoa.framework in Frameworks */,
 				51718B001E2FFE9F00D59D73 /* libfreetype.6.dylib in Frameworks */,
 				51718B5B1E300C2E00D59D73 /* libassimp.3.3.1.dylib in Frameworks */,
@@ -596,10 +594,7 @@
 		5171893F1E2FE03000D59D73 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				517189261E2FDF0D00D59D73 /* AppDelegate.h */,
-				517189271E2FDF0D00D59D73 /* AppDelegate.m */,
 				5171892C1E2FDF0D00D59D73 /* Assets.xcassets */,
-				5171892E1E2FDF0D00D59D73 /* MainMenu.xib */,
 				517189311E2FDF0D00D59D73 /* Info.plist */,
 				5171892A1E2FDF0D00D59D73 /* main.mm */,
 			);
@@ -1029,6 +1024,7 @@
 		51718B011E2FFF7000D59D73 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51718B5E1E30648A00D59D73 /* CoreVideo.framework */,
 				51718B021E2FFF7000D59D73 /* Cocoa.framework */,
 			);
 			name = Frameworks;
@@ -1243,7 +1239,6 @@
 				517189F81E2FE6E200D59D73 /* rotate_normalized_axis.inl in Resources */,
 				51718AAA1E2FE71900D59D73 /* type_mat4x4.inl in Resources */,
 				51718B541E30098E00D59D73 /* material.inl in Resources */,
-				517189301E2FDF0D00D59D73 /* MainMenu.xib in Resources */,
 				51718A3B1E2FE6F200D59D73 /* matrix_transform.inl in Resources */,
 				517189DF1E2FE6E200D59D73 /* handed_coordinate_space.inl in Resources */,
 				517189E21E2FE6E200D59D73 /* intersect.inl in Resources */,
@@ -1363,23 +1358,11 @@
 				51718AB11E2FE71900D59D73 /* glm.cpp in Sources */,
 				517189471E2FE05800D59D73 /* gl3w.c in Sources */,
 				5171892B1E2FDF0D00D59D73 /* main.mm in Sources */,
-				517189281E2FDF0D00D59D73 /* AppDelegate.m in Sources */,
 				51718ACC1E2FE99F00D59D73 /* GraphicsSandboxMain.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		5171892E1E2FDF0D00D59D73 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5171892F1E2FDF0D00D59D73 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		517189321E2FDF0D00D59D73 /* Debug */ = {
